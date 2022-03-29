@@ -1,8 +1,10 @@
 import random
-r = random.randint(1,100)
 
+r = random.randint(1,100)
+count = 0
 
 while True:
+	count = count + 1
 	num = int(input('guess:'))
 	if num == r:
 		print('congrat')
@@ -11,3 +13,4 @@ while True:
 		print('so big')
 	elif num < r:
 		print('so small')
+	print(count,'次')
